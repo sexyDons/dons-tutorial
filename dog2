@@ -2,4 +2,19 @@
 0721 23:34 
 
 마지막 테스트 방금 커밋 완료했고 이제 다시 수정할거야 dog2를 현재시각 11:41분 
-이제 저장하고 커밋 후 다시 push 해보자 
+이제 저장하고 커밋 후 다시 push 해보자 \
+
+
+// 여기부터는 커밋이 안됐을거야 왜냐면 난 껐으니깐 
+그럼 왜 문제였는지 생각을 해보자 
+
+원인 
+1) 아까전에는 updates-were-rejected-because-the-tip-of-your-current-branch-is-behind-its-counte 라는 오류가 났었다. 
+이건 아마도 master와 head 분리되어있는데 내가 아무리 커밋을해도 head에 커밋이 되었기 때문에 checkout - 을 하더라도 push를 origin master로 하기 때문에 안되었던거 같음 
+
+2) 소스트리에서 헤드를 만지작거리다가 실수로 아예 없애버림 약간 branch같은 개념인가? 
+
+
+해결
+
+1) 결국 다시 파일을 다 만들고 해봄 add 잘먹힘 push 잘먹힠 위에와 차이점은 master / head가 분리 안되어있음 
